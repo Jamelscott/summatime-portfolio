@@ -51,7 +51,7 @@
   <!-- HERO -->
   <section style="padding:6vmax 7vw 6vmax;display:grid;grid-template-columns:0.6fr 1fr;gap:64px;align-items:start;position:relative;overflow:hidden;background:#ffffff;" data-mq-stack>
     <div style="position:absolute;inset:0;background-image:url('./assets/about-hero-cover.jpg');background-size:cover;background-position:center;-webkit-mask-image:linear-gradient(to bottom, transparent, black 30%, black 60%, transparent), linear-gradient(to right, transparent, black 15%, black 85%, transparent);-webkit-mask-composite:source-in;mask-image:linear-gradient(to bottom, transparent, black 30%, black 60%, transparent), linear-gradient(to right, transparent, black 15%, black 85%, transparent);mask-composite:intersect;opacity:0.28;"></div>
-    <image-slot id="about-portrait" placeholder="portrait photo" shape="rounded" radius="16" style="width:100%;aspect-ratio:4/5;transform:rotate(-3deg);position:relative;"></image-slot>
+    <image-slot id="about-portrait" src="./assets/about-portrait.webp" placeholder="portrait photo" shape="rounded" radius="16" style="width:100%;aspect-ratio:4/5;transform:rotate(-3deg);position:relative;"></image-slot>
     <div style="padding-top:12px;position:relative;">
       <h1 data-reveal style="font-family:'Lora',serif;font-weight:400;font-size:44px;line-height:1.15;margin:0 0 8px;letter-spacing:-0.01em;">Hi, I'm Summer.</h1>
       <div data-reveal style="font-size:13px;letter-spacing:0.1em;text-transform:uppercase;color:#7c8a80;margin-bottom:32px;">Based in Vancouver, BC</div>
@@ -71,7 +71,7 @@
     </div>
     <div style="display:flex;flex-direction:column;">
       <div data-reveal data-mq-exp style="display:grid;grid-template-columns:56px 1fr auto;gap:20px;align-items:start;padding:24px 0;border-top:1px solid #e2e0d8;">
-        <image-slot id="exp-logo-axiom" placeholder="logo" shape="rounded" radius="8" style="width:56px;height:56px;"></image-slot>
+        <image-slot id="exp-logo-axiom" src="./assets/logo-axiom-zen.webp" placeholder="logo" shape="rounded" radius="8" style="width:56px;height:56px;"></image-slot>
         <div>
           <div style="font-family:'Lora',serif;font-weight:600;font-size:19px;margin-bottom:4px;">Axiom Zen</div>
           <div style="font-size:13px;color:#7c8a80;margin-bottom:16px;">Apr 2020 &rarr; Current &middot; 6 yrs 5 mos</div>
@@ -95,7 +95,7 @@
         <div></div>
       </div>
       <div data-reveal data-mq-exp style="display:grid;grid-template-columns:56px 1fr auto;gap:20px;align-items:start;padding:24px 0;border-top:1px solid #e2e0d8;">
-        <image-slot id="exp-logo-zenhub" placeholder="logo" shape="rounded" radius="8" style="width:56px;height:56px;"></image-slot>
+        <image-slot id="exp-logo-zenhub" src="./assets/logo-zenhub.webp" placeholder="logo" shape="rounded" radius="8" style="width:56px;height:56px;"></image-slot>
         <div>
           <div style="font-family:'Lora',serif;font-weight:600;font-size:19px;margin-bottom:4px;">ZenHub</div>
           <div style="font-size:14px;font-weight:600;margin-bottom:6px;">Product Designer</div>
@@ -104,7 +104,7 @@
         <div style="font-size:13px;color:#7c8a80;text-align:right;white-space:nowrap;">2023 &middot; &lt;1 yr</div>
       </div>
       <div data-reveal data-mq-exp style="display:grid;grid-template-columns:56px 1fr auto;gap:20px;align-items:start;padding:24px 0;border-top:1px solid #e2e0d8;border-bottom:1px solid #e2e0d8;">
-        <image-slot id="exp-logo-dapper" placeholder="logo" shape="rounded" radius="8" style="width:56px;height:56px;"></image-slot>
+        <image-slot id="exp-logo-dapper" src="./assets/logo-dapper-labs.webp" placeholder="logo" shape="rounded" radius="8" style="width:56px;height:56px;"></image-slot>
         <div>
           <div style="font-family:'Lora',serif;font-weight:600;font-size:19px;margin-bottom:4px;">Dapper Labs</div>
           <div style="font-size:13px;color:#7c8a80;margin-bottom:16px;">Jan 2019 &rarr; Apr 2020 &middot; 1 yr 4 mos</div>
@@ -135,7 +135,7 @@
     <div style="font-size:12px;letter-spacing:0.14em;text-transform:uppercase;color:#7c8a80;margin-bottom:8px;">Education</div>
     <div style="display:flex;flex-direction:column;">
       <div data-reveal data-mq-exp style="display:grid;grid-template-columns:56px 1fr auto;gap:20px;align-items:start;padding:24px 0;border-top:1px solid #e2e0d8;">
-        <image-slot id="edu-logo" placeholder="logo" shape="rounded" radius="8" style="width:56px;height:56px;"></image-slot>
+        <image-slot id="edu-logo" src="./assets/logo-sfu.webp" placeholder="logo" shape="rounded" radius="8" style="width:56px;height:56px;"></image-slot>
         <div>
           <div style="font-family:'Lora',serif;font-weight:600;font-size:19px;margin-bottom:4px;">Simon Fraser University</div>
           <p style="font-size:14px;line-height:1.55;color:#4b5650;margin:0;">Bachelor of Arts (BA), Interactive Arts and Technology & Business Administration</p>
@@ -143,7 +143,7 @@
         <div style="font-size:13px;color:#7c8a80;text-align:right;white-space:nowrap;">2012 – 2018</div>
       </div>
       <div data-reveal data-mq-exp style="display:grid;grid-template-columns:56px 1fr auto;gap:20px;align-items:start;padding:24px 0;border-top:1px solid #e2e0d8;border-bottom:1px solid #e2e0d8;">
-        <image-slot id="edu-logo-2" placeholder="logo" shape="rounded" radius="8" style="width:56px;height:56px;"></image-slot>
+        <image-slot id="edu-logo-2" src="./assets/logo-sfu.webp" placeholder="logo" shape="rounded" radius="8" style="width:56px;height:56px;"></image-slot>
         <div>
           <div style="font-family:'Lora',serif;font-weight:600;font-size:19px;margin-bottom:4px;">Simon Fraser University</div>
           <p style="font-size:14px;line-height:1.55;color:#4b5650;margin:0;">ItaliaDesign Field School &middot; <a href="https://2018.sfuitaliadesign.com" target="_blank" rel="noopener">2018.sfuitaliadesign.com</a></p>
