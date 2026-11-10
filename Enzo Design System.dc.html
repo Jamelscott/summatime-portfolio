@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <script src="./image-slot.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="true"/>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet"/>
+  <style>
+    body{margin:0;background:#faf9f6;}
+    a{color:#2f5949;}
+    a:hover{color:#1a3328;}
+    ::selection{background:#4f7c68;color:#fff;}
+  </style>
+</helmet>
+
+<div style="font-family:'Work Sans',sans-serif;color:#151b17;max-width:1400px;margin:0 auto;padding:0 4vw 8vmax;">
+
+  <div style="padding:5vmax 0 3vmax;border-bottom:1px solid #e2e0d8;">
+    <div style="font-size:12px;letter-spacing:0.14em;text-transform:uppercase;color:#7c8a80;margin-bottom:14px;">Template · Enzo — Reimagined</div>
+    <h1 style="font-family:'Lora',serif;font-weight:600;font-size:56px;margin:0 0 16px;letter-spacing:-0.01em;">Design System</h1>
+    <p style="font-size:17px;line-height:1.6;color:#4b5650;max-width:640px;margin:0;">The Enzo portfolio template's editorial structure, rebuilt with a Quincy‑inspired serif and the Midnight Green palette in place of Enzo's condensed sans and orange‑on‑black scheme.</p>
+  </div>
+
+  <!-- TYPOGRAPHY -->
+  <section style="padding:5vmax 0;border-bottom:1px solid #e2e0d8;">
+    <div style="font-size:12px;letter-spacing:0.14em;text-transform:uppercase;color:#7c8a80;margin-bottom:28px;">Typography</div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:48px;">
+      <div>
+        <div style="font-size:13px;color:#7c8a80;margin-bottom:10px;">Display / Headline — <em>Quincy‑style serif substitute: Lora</em></div>
+        <div style="font-family:'Lora',serif;font-weight:600;font-size:64px;line-height:1.05;letter-spacing:-0.01em;">Aa Bb Cc</div>
+        <p style="font-family:'Lora',serif;font-size:22px;line-height:1.5;margin-top:14px;color:#2a332d;">Portraits. Lifestyle. Music &amp; motion, with edge and intention.</p>
+      </div>
+      <div>
+        <div style="font-size:13px;color:#7c8a80;margin-bottom:10px;">Body / UI — Work Sans</div>
+        <div style="font-size:64px;font-weight:500;line-height:1.05;letter-spacing:-0.01em;">Aa Bb Cc</div>
+        <p style="font-size:16px;line-height:1.65;margin-top:14px;color:#4b5650;max-width:420px;">This is example text that shows the look and feel of the font in body copy, captions, and interface labels across the site.</p>
+      </div>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:24px;margin-top:40px;">
+      <div><div style="font-family:'Lora',serif;font-weight:600;font-size:40px;">H1 / 56–64</div><div style="font-size:12px;color:#7c8a80;margin-top:6px;">Lora 600</div></div>
+      <div><div style="font-family:'Lora',serif;font-weight:500;font-size:30px;">H2 / 32</div><div style="font-size:12px;color:#7c8a80;margin-top:6px;">Lora 500</div></div>
+      <div><div style="font-size:18px;font-weight:600;">Label / 18</div><div style="font-size:12px;color:#7c8a80;margin-top:6px;">Work Sans 600</div></div>
+      <div><div style="font-size:16px;">Body / 16</div><div style="font-size:12px;color:#7c8a80;margin-top:6px;">Work Sans 400</div></div>
+    </div>
+  </section>
+
+  <!-- COLOR -->
+  <section style="padding:5vmax 0;border-bottom:1px solid #e2e0d8;">
+    <div style="font-size:12px;letter-spacing:0.14em;text-transform:uppercase;color:#7c8a80;margin-bottom:28px;">Color · Midnight Green</div>
+    <div style="display:grid;grid-template-columns:repeat(5,1fr);gap:16px;">
+      <sc-for list="{{ colors }}" as="c" hint-placeholder-count="5">
+        <div>
+          <div style="height:110px;border-radius:2px;border:1px solid #e2e0d8;background:{{ c.hex }};"></div>
+          <div style="margin-top:10px;font-size:14px;font-weight:500;">{{ c.name }}</div>
+          <div style="font-size:12px;color:#7c8a80;">{{ c.hex }}</div>
+        </div>
+      </sc-for>
+    </div>
+    <div style="margin-top:32px;display:inline-flex;align-items:center;gap:10px;border:1px solid #4f7c68;padding:10px 18px;border-radius:2px;font-size:14px;font-weight:500;">
+      <span style="font-family:'Lora',serif;">Aa</span> Light scheme — dark text on light ground
+    </div>
+  </section>
+
+  <!-- SPACING -->
+  <section style="padding:5vmax 0;border-bottom:1px solid #e2e0d8;">
+    <div style="font-size:12px;letter-spacing:0.14em;text-transform:uppercase;color:#7c8a80;margin-bottom:28px;">Spacing</div>
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:40px;">
+      <div>
+        <div style="font-weight:600;margin-bottom:6px;">Max page width</div>
+        <div style="font-size:28px;font-family:'Lora',serif;">1400px</div>
+      </div>
+      <div>
+        <div style="font-weight:600;margin-bottom:6px;">Site margin</div>
+        <div style="font-size:28px;font-family:'Lora',serif;">4vw</div>
+      </div>
+      <div>
+        <div style="font-weight:600;margin-bottom:6px;">Block padding</div>
+        <div style="font-size:28px;font-family:'Lora',serif;">5vmax</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BUTTONS -->
+  <section style="padding:5vmax 0;border-bottom:1px solid #e2e0d8;">
+    <div style="font-size:12px;letter-spacing:0.14em;text-transform:uppercase;color:#7c8a80;margin-bottom:28px;">Buttons</div>
+    <div style="display:flex;gap:20px;align-items:center;flex-wrap:wrap;">
+      <button style="font-family:'Work Sans',sans-serif;background:#2f5949;color:#fff;border:none;padding:16px 32px;font-size:15px;font-weight:500;letter-spacing:0.03em;border-radius:1px;cursor:pointer;">View Gallery</button>
+      <button style-hover="border-color:#151b17;color:#151b17;" style="font-family:'Work Sans',sans-serif;background:transparent;color:#4b5650;border:1px solid #c7cec7;padding:16px 32px;font-size:15px;font-weight:500;letter-spacing:0.03em;border-radius:1px;cursor:pointer;">Learn More</button>
+      <span style="font-family:'Lora',serif;font-size:15px;text-decoration:underline;text-decoration-color:#4f7c68;text-underline-offset:4px;cursor:pointer;">Text link, underlined</span>
+    </div>
+  </section>
+
+  <!-- SAMPLE LAYOUT: ENZO HERO -->
+  <section style="padding:5vmax 0;">
+    <div style="font-size:12px;letter-spacing:0.14em;text-transform:uppercase;color:#7c8a80;margin-bottom:28px;">Sample — Hero Block</div>
+    <div style="background:#151b17;color:#f5f3ec;padding:64px 48px;border-radius:2px;">
+      <div style="font-size:13px;letter-spacing:0.12em;text-transform:uppercase;color:#7fa893;margin-bottom:40px;">Enzo</div>
+      <div style="font-family:'Lora',serif;font-size:44px;line-height:1.2;font-weight:500;max-width:640px;">Portraits. Lifestyle. Music &amp; motion — with edge and intention.</div>
+      <div style="font-size:13px;color:#a9b6ae;margin-top:28px;max-width:280px;line-height:1.6;">I create images that feel intimate, cinematic, and quietly powerful — built to resonate long after they're seen.</div>
+    </div>
+
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:2px;margin-top:2px;">
+      <div style="background:#4f7c68;padding:48px;color:#0e1512;min-height:220px;display:flex;flex-direction:column;justify-content:flex-end;">
+        <div style="font-family:'Lora',serif;font-size:22px;font-weight:600;">Lifestyle</div>
+        <div style="font-size:14px;margin-top:8px;line-height:1.5;max-width:280px;">This is a paragraph. Click edit and enter your own text.</div>
+        <div style="font-size:12px;letter-spacing:0.1em;text-transform:uppercase;margin-top:20px;text-decoration:underline;">View Gallery</div>
+      </div>
+      <image-slot id="enzo-hero-portrait" placeholder="portrait — lifestyle shoot" style="min-height:220px;"></image-slot>
+    </div>
+  </section>
+
+</div>
+
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  renderVals() {
+    return {
+      colors: [
+        { name: 'White', hex: '#ffffff' },
+        { name: 'Fog', hex: '#eef0ec' },
+        { name: 'Sage', hex: '#4f7c68' },
+        { name: 'Pine', hex: '#2f5949' },
+        { name: 'Midnight', hex: '#151b17' }
+      ]
+    };
+  }
+}
+</script>
+</body>
+</html>

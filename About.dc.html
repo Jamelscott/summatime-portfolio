@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%E2%98%80%EF%B8%8F%3C/text%3E%3C/svg%3E"/>
+
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<template id="__bundler_thumbnail"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200"><rect width="200" height="200" fill="#f2f0e9"/><text x="100" y="110" font-size="64" text-anchor="middle" font-family="serif">SL</text></svg></template>
+  <script src="./image-slot.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="true"/>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet"/>
+  <style>
+    body{margin:0;background:#ffffff;font-family:'Work Sans',sans-serif;color:#151b17;}
+    a{color:#2f5949;}
+    a:hover{color:#1a3328;}
+    ::selection{background:#4f7c68;color:#fff;}
+    [data-reveal]{opacity:0;transform:translateY(28px);transition:opacity 800ms cubic-bezier(0.16,1,0.3,1),transform 800ms cubic-bezier(0.16,1,0.3,1);}
+    [data-reveal].is-in{opacity:1;transform:translateY(0);}
+    @media (max-width:760px){
+      h1{font-size:32px !important;}
+      section[data-mq-stack]{grid-template-columns:1fr !important;gap:24px !important;}
+      [data-mq-stack] > image-slot{width:60% !important;margin:0 auto;}
+      [data-mq-exp]{grid-template-columns:44px 1fr !important;}
+      [data-mq-exp] > *:last-child{grid-column:1 / -1 !important;text-align:left !important;white-space:normal !important;margin-top:4px !important;}
+      [data-mq-exp] image-slot{width:44px !important;height:44px !important;}
+      #ig-grid{grid-template-columns:repeat(2,1fr) !important;}
+      nav > div:last-child{gap:16px !important;}
+      section, footer, nav{padding-left:24px !important;padding-right:24px !important;}
+    }
+  </style>
+</helmet>
+
+<div style="max-width:1400px;margin:0 auto;cursor:url('data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20width%3D%2732%27%20height%3D%2732%27%3E%3Ctext%20y%3D%2724%27%20font-size%3D%2726%27%3E%E2%98%80%EF%B8%8F%3C/text%3E%3C/svg%3E') 16 16, pointer;">
+
+  <!-- NAV -->
+  <nav style="display:flex;align-items:center;justify-content:space-between;padding:28px 7vw;position:sticky;top:0;background:rgba(255,255,255,0.92);backdrop-filter:blur(6px);z-index:10;">
+    <a href="./Portfolio.dc.html" style="font-size:14px;letter-spacing:0.14em;text-transform:uppercase;font-weight:600;text-decoration:none;color:#151b17;">Summer-Lee Schoenfeld</a>
+    <div style="display:flex;gap:32px;font-size:14px;letter-spacing:0.04em;">
+      <a href="./Portfolio.dc.html#work" style="text-decoration:none;">Work</a>
+      <a href="./About.dc.html" style="text-decoration:none;color:#151b17;font-weight:600;">About</a>
+      <a href="https://www.linkedin.com/in/summer-lee-schoenfeld/" target="_blank" rel="noopener" style="text-decoration:none;">LinkedIn</a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section style="padding:6vmax 7vw 6vmax;display:grid;grid-template-columns:0.6fr 1fr;gap:64px;align-items:start;position:relative;overflow:hidden;background:#ffffff;" data-mq-stack>
+    <div style="position:absolute;inset:0;background-image:url('./assets/about-hero-cover.jpg');background-size:cover;background-position:center;-webkit-mask-image:linear-gradient(to bottom, transparent, black 30%, black 60%, transparent), linear-gradient(to right, transparent, black 15%, black 85%, transparent);-webkit-mask-composite:source-in;mask-image:linear-gradient(to bottom, transparent, black 30%, black 60%, transparent), linear-gradient(to right, transparent, black 15%, black 85%, transparent);mask-composite:intersect;opacity:0.28;"></div>
+    <image-slot id="about-portrait" placeholder="portrait photo" shape="rounded" radius="16" style="width:100%;aspect-ratio:4/5;transform:rotate(-3deg);position:relative;"></image-slot>
+    <div style="padding-top:12px;position:relative;">
+      <h1 data-reveal style="font-family:'Lora',serif;font-weight:400;font-size:44px;line-height:1.15;margin:0 0 8px;letter-spacing:-0.01em;">Hi, I'm Summer.</h1>
+      <div data-reveal style="font-size:13px;letter-spacing:0.1em;text-transform:uppercase;color:#7c8a80;margin-bottom:32px;">Based in Vancouver, BC</div>
+      <p data-reveal style="font-size:19px;line-height:1.65;color:#2a332d;margin:0 0 20px;">Professionally, I've been designing for 6+ years. I start from what's confusing or frustrating for the person on the other end, and build from there.</p>
+      <p data-reveal style="font-size:19px;line-height:1.65;color:#2a332d;margin:0;">Outside of work, you'll catch me chilling at home with my cats or fiddling with my camera. I'm also the type who counts every step and unpacks a suitcase within minutes of getting home, no exceptions.</p>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section style="padding:0 7vw 6vmax;">
+    <div style="display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:16px;margin-bottom:8px;">
+      <div style="font-size:12px;letter-spacing:0.14em;text-transform:uppercase;color:#7c8a80;">Experience</div>
+      <div style="display:flex;gap:20px;font-size:13px;">
+        <a href="https://www.linkedin.com/in/summer-lee-schoenfeld/" target="_blank" rel="noopener" style="text-decoration:none;">LinkedIn</a>
+        <a href="./assets/Summer-Lee-Schoenfeld-Resume.pdf" target="_blank" rel="noopener" style="text-decoration:none;">&middot; Resume</a>
+      </div>
+    </div>
+    <div style="display:flex;flex-direction:column;">
+      <div data-reveal data-mq-exp style="display:grid;grid-template-columns:56px 1fr auto;gap:20px;align-items:start;padding:24px 0;border-top:1px solid #e2e0d8;">
+        <image-slot id="exp-logo-axiom" placeholder="logo" shape="rounded" radius="8" style="width:56px;height:56px;"></image-slot>
+        <div>
+          <div style="font-family:'Lora',serif;font-weight:600;font-size:19px;margin-bottom:4px;">Axiom Zen</div>
+          <div style="font-size:13px;color:#7c8a80;margin-bottom:16px;">Apr 2020 &rarr; Current &middot; 6 yrs 5 mos</div>
+          <div style="display:flex;flex-direction:column;gap:16px;">
+            <div style="border-left:2px solid #e2e0d8;padding-left:16px;">
+              <div style="display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;">
+                <div style="font-size:14px;font-weight:600;">Senior Product Designer and Product Manager</div>
+                <div style="font-size:13px;color:#7c8a80;white-space:nowrap;">Nov 2023 &rarr; Current &middot; 2 yrs 10 mos</div>
+              </div>
+              <p style="font-size:14px;line-height:1.55;color:#4b5650;margin:6px 0 0;max-width:560px;">Took Toby from free to paid, driving 10x+ growth in paid adoption and ~12x revenue growth in a year.</p>
+            </div>
+            <div style="border-left:2px solid #e2e0d8;padding-left:16px;">
+              <div style="display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;">
+                <div style="font-size:14px;font-weight:600;">Product Designer</div>
+                <div style="font-size:13px;color:#7c8a80;white-space:nowrap;">Apr 2020 &rarr; Nov 2023 &middot; 3 yrs 8 mos</div>
+              </div>
+              <p style="font-size:14px;line-height:1.55;color:#4b5650;margin:6px 0 0;max-width:560px;">Led design across Toby's core surfaces for a Chrome extension trusted by 400,000+ users.</p>
+            </div>
+          </div>
+        </div>
+        <div></div>
+      </div>
+      <div data-reveal data-mq-exp style="display:grid;grid-template-columns:56px 1fr auto;gap:20px;align-items:start;padding:24px 0;border-top:1px solid #e2e0d8;">
+        <image-slot id="exp-logo-zenhub" placeholder="logo" shape="rounded" radius="8" style="width:56px;height:56px;"></image-slot>
+        <div>
+          <div style="font-family:'Lora',serif;font-weight:600;font-size:19px;margin-bottom:4px;">ZenHub</div>
+          <div style="font-size:14px;font-weight:600;margin-bottom:6px;">Product Designer</div>
+          <p style="font-size:14px;line-height:1.55;color:#4b5650;margin:0;max-width:560px;">Contracted to design Saved Views, an Issues/Epics commenting system, and an AI-driven Sprint Review feature.</p>
+        </div>
+        <div style="font-size:13px;color:#7c8a80;text-align:right;white-space:nowrap;">2023 &middot; &lt;1 yr</div>
+      </div>
+      <div data-reveal data-mq-exp style="display:grid;grid-template-columns:56px 1fr auto;gap:20px;align-items:start;padding:24px 0;border-top:1px solid #e2e0d8;border-bottom:1px solid #e2e0d8;">
+        <image-slot id="exp-logo-dapper" placeholder="logo" shape="rounded" radius="8" style="width:56px;height:56px;"></image-slot>
+        <div>
+          <div style="font-family:'Lora',serif;font-weight:600;font-size:19px;margin-bottom:4px;">Dapper Labs</div>
+          <div style="font-size:13px;color:#7c8a80;margin-bottom:16px;">Jan 2019 &rarr; Apr 2020 &middot; 1 yr 4 mos</div>
+          <div style="display:flex;flex-direction:column;gap:16px;">
+            <div style="border-left:2px solid #e2e0d8;padding-left:16px;">
+              <div style="display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;">
+                <div style="font-size:14px;font-weight:600;">Product Designer and Researcher</div>
+                <div style="font-size:13px;color:#7c8a80;white-space:nowrap;">Sep 2019 &rarr; Apr 2020 &middot; 8 mos</div>
+              </div>
+              <p style="font-size:14px;line-height:1.55;color:#4b5650;margin:6px 0 0;max-width:560px;">Led user research for NBA Top Shot, shaping product concepts, onboarding, and early wallet experiences.</p>
+            </div>
+            <div style="border-left:2px solid #e2e0d8;padding-left:16px;">
+              <div style="display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;">
+                <div style="font-size:14px;font-weight:600;">Product Designer Intern</div>
+                <div style="font-size:13px;color:#7c8a80;white-space:nowrap;">Jan 2019 &rarr; Sep 2019 &middot; 9 mos</div>
+              </div>
+              <p style="font-size:14px;line-height:1.55;color:#4b5650;margin:6px 0 0;max-width:560px;">Researched and designed early onboarding and recovery flows for Dapper Wallet and CryptoKitties.</p>
+            </div>
+          </div>
+        </div>
+        <div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EDUCATION -->
+  <section style="padding:0 7vw 6vmax;">
+    <div style="font-size:12px;letter-spacing:0.14em;text-transform:uppercase;color:#7c8a80;margin-bottom:8px;">Education</div>
+    <div style="display:flex;flex-direction:column;">
+      <div data-reveal data-mq-exp style="display:grid;grid-template-columns:56px 1fr auto;gap:20px;align-items:start;padding:24px 0;border-top:1px solid #e2e0d8;">
+        <image-slot id="edu-logo" placeholder="logo" shape="rounded" radius="8" style="width:56px;height:56px;"></image-slot>
+        <div>
+          <div style="font-family:'Lora',serif;font-weight:600;font-size:19px;margin-bottom:4px;">Simon Fraser University</div>
+          <p style="font-size:14px;line-height:1.55;color:#4b5650;margin:0;">Bachelor of Arts (BA), Interactive Arts and Technology & Business Administration</p>
+        </div>
+        <div style="font-size:13px;color:#7c8a80;text-align:right;white-space:nowrap;">2012 – 2018</div>
+      </div>
+      <div data-reveal data-mq-exp style="display:grid;grid-template-columns:56px 1fr auto;gap:20px;align-items:start;padding:24px 0;border-top:1px solid #e2e0d8;border-bottom:1px solid #e2e0d8;">
+        <image-slot id="edu-logo-2" placeholder="logo" shape="rounded" radius="8" style="width:56px;height:56px;"></image-slot>
+        <div>
+          <div style="font-family:'Lora',serif;font-weight:600;font-size:19px;margin-bottom:4px;">Simon Fraser University</div>
+          <p style="font-size:14px;line-height:1.55;color:#4b5650;margin:0;">ItaliaDesign Field School &middot; <a href="https://2018.sfuitaliadesign.com" target="_blank" rel="noopener">2018.sfuitaliadesign.com</a></p>
+        </div>
+        <div style="font-size:13px;color:#7c8a80;text-align:right;white-space:nowrap;">2018</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PHOTOGRAPHY -->
+  <section style="padding:0 7vw 6vmax;">
+    <div data-reveal style="border-top:1px solid #e2e0d8;border-bottom:1px solid #e2e0d8;padding:32px 0;display:flex;justify-content:space-between;align-items:center;gap:24px;flex-wrap:wrap;">
+      <div>
+        <div style="font-size:12px;letter-spacing:0.14em;text-transform:uppercase;color:#7c8a80;margin-bottom:8px;">Outside of Product</div>
+        <div style="font-family:'Lora',serif;font-weight:600;font-size:19px;">Photography</div>
+        <p style="font-size:14px;line-height:1.55;color:#4b5650;margin:6px 0 0;max-width:480px;">A collection of my personal photography work, hosted on Pixieset.</p>
+      </div>
+      <a href="https://summer-leeschoenfeldphotography.pixieset.com" target="_blank" rel="noopener" style="display:inline-block;font-family:'Work Sans',sans-serif;font-size:14px;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:#1b2824;text-decoration:none;border-bottom:1px solid #1b2824;padding:12px 0;white-space:nowrap;">View Gallery</a>
+    </div>
+  </section>
+
+  <!-- SOCIAL / INSTAGRAM -->
+  <section style="padding:0 7vw 6vmax;">
+    <div style="display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:16px;margin-bottom:20px;">
+      <div style="font-size:12px;letter-spacing:0.14em;text-transform:uppercase;color:#7c8a80;">On Instagram</div>
+      <a href="https://www.instagram.com/summerleeschoenfeld/" target="_blank" rel="noopener" style="font-size:13px;letter-spacing:0.08em;text-transform:uppercase;text-decoration:none;border-bottom:1px solid #2f5949;padding-bottom:2px;">@summerleeschoenfeld</a>
+    </div>
+    <div id="ig-grid" data-reveal style="display:grid;grid-template-columns:repeat(4,1fr);gap:16px;">
+      <a href="https://www.instagram.com/summerleeschoenfeld/" target="_blank" rel="noopener"><image-slot id="ig-photo-1" placeholder="photo" shape="rounded" radius="12" style="width:100%;aspect-ratio:1/1;"></image-slot></a>
+      <a href="https://www.instagram.com/summerleeschoenfeld/" target="_blank" rel="noopener"><image-slot id="ig-photo-2" placeholder="photo" shape="rounded" radius="12" style="width:100%;aspect-ratio:1/1;"></image-slot></a>
+      <a href="https://www.instagram.com/summerleeschoenfeld/" target="_blank" rel="noopener"><image-slot id="ig-photo-3" placeholder="photo" shape="rounded" radius="12" style="width:100%;aspect-ratio:1/1;"></image-slot></a>
+      <a href="https://www.instagram.com/summerleeschoenfeld/" target="_blank" rel="noopener"><image-slot id="ig-photo-4" placeholder="photo" shape="rounded" radius="12" style="width:100%;aspect-ratio:1/1;"></image-slot></a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer style="padding:5vmax 7vw;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:16px;">
+    <div style="font-size:13px;color:#7c8a80;">© 2026 Summer-Lee Schoenfeld</div>
+    <a href="https://www.linkedin.com/in/summer-lee-schoenfeld/" target="_blank" rel="noopener" style="font-size:13px;letter-spacing:0.08em;text-transform:uppercase;text-decoration:none;border-bottom:1px solid #2f5949;padding-bottom:2px;">LinkedIn</a>
+  </footer>
+
+</div>
+
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  componentDidMount() {
+    const els = Array.from(document.querySelectorAll('[data-reveal]'));
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-in');
+          io.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12, rootMargin: '0px 0px -8% 0px' });
+    els.forEach((el) => {
+      const r = el.getBoundingClientRect();
+      if (r.top < window.innerHeight * 0.92 && r.bottom > 0) {
+        el.classList.add('is-in');
+      } else {
+        io.observe(el);
+      }
+    });
+    this._revealObserver = io;
+  }
+  componentWillUnmount() {
+    if (this._revealObserver) this._revealObserver.disconnect();
+  }
+}
+</script>
+</body>
+</html>
